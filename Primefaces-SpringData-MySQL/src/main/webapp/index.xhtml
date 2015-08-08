@@ -1,0 +1,38 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+	<h:head>
+		<script name="jquery/jquery.js" library="primefaces"></script>
+	</h:head>	
+	<f:view>
+		<h:form prependId="false">
+			<h2>JavaBeat Tutorials</h2>
+			<h2>Primefaces + Spring Data + MySQL</h2>
+			<h:panelGrid columns="2">		
+				<h:outputText value="Enter Employee Name:"/>
+				<p:inputText value="#{registrationManagedBean.employee.employeeName}"></p:inputText>
+				<h:outputText value="Enter Employee Address Country:"/>
+				<p:inputText value="#{registrationManagedBean.employee.address.addressCountry}"></p:inputText>
+				<h:outputText value="Enter Employee Address City:"/>
+				<p:inputText value="#{registrationManagedBean.employee.address.addressCity}"></p:inputText>								
+			</h:panelGrid>
+			<p:commandButton value="Register" action="#{registrationManagedBean.register}" ajax="false"/>
+			<p:separator/>
+			<h:panelGrid columns="1" width="50%">
+				<p:dataTable value="#{registrationManagedBean.employees}" var="employee">
+					<p:column headerText="Employee's Name">
+						<h:outputText value="#{employee.employeeName}"/>
+					</p:column>
+					<p:column headerText="Employee's Country">
+						<h:outputText value="#{employee.address.addressCountry}"/>
+					</p:column>
+					<p:column headerText="Employee's City">
+						<h:outputText value="#{employee.address.addressCity}"/>
+					</p:column>
+				</p:dataTable>
+			</h:panelGrid>		
+		</h:form>		 						
+	</f:view>
+</html>
