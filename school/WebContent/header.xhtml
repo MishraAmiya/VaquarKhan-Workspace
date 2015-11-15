@@ -1,0 +1,43 @@
+<h:html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core"
+ 	 xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head></h:head>
+<h:body>
+    <ui:composition>
+ 
+        <f:view>
+            <p:panel style="min-height: inherit; height: inherit;">
+              
+              <p:outputPanel style="float: left;width: inherit;height: inherit;">
+                <center>
+                  <p:graphicImage value="./../resources/images/gvn_logo.gif" width="85px" height="90px"/>
+                </center>               
+              </p:outputPanel>
+              
+              <p:outputPanel>
+
+                <p:panel rendered="#{loginBean.showLogout}" style="float: right; border: 0;">
+                  <f:view>
+                    <h:form>                      
+                      <p:outputLabel value="#{loginBean.roleName} : #{loginBean.name}" styleClass="grbg"/>
+                      
+                      <p:commandLink value="log out" action="#{loginBean.logout()}" styleClass="loglink"/>
+                      
+                      <h:link value="My Home" outcome="#{loginBean.goMyHome()}" styleClass="loglink"/>
+                    </h:form>
+                  </f:view>
+                </p:panel>
+
+                <p:panel style="height: 60px; border: 0;padding: 0;color: #333300;">
+                  <p:outputLabel value="School Management" styleClass="schname"/>
+                </p:panel>            
+
+              </p:outputPanel>
+            </p:panel>
+          </f:view>
+ 
+    </ui:composition>
+</h:body>
+</h:html>

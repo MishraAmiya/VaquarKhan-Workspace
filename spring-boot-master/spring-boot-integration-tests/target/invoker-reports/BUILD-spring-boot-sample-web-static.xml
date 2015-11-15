@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-job project="spring-boot-sample-web-static\pom.xml" name="" description="" result="failure-build" time="2.714" type="normal">
+  <failureMessage>The build exited with code 1. See C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-integration-tests\..\spring-boot-samples\spring-boot-sample-web-static\build.log for details.</failureMessage>
+</build-job>

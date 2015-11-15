@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <taskdef resource="net/sf/antcontrib/antcontrib.properties"/>
+  <taskdef classname="ise.antelope.tasks.StringUtilTask" name="stringutil"/>
+  <var name="version-type" value="1.2.0.BUILD-SNAPSHOT"/>
+  <propertyregex input="${version-type}" regexp=".*\.(.*)" property="version-type" replace="\1" override="true"/>
+  <propertyregex input="${version-type}" regexp="(M)\d+" property="version-type" replace="MILESTONE" override="true"/>
+  <propertyregex input="${version-type}" regexp="(RC)\d+" property="version-type" replace="MILESTONE" override="true"/>
+  <propertyregex input="${version-type}" regexp="BUILD-(.*)" property="version-type" replace="SNAPSHOT" override="true"/>
+  <stringutil string="${version-type}" property="repo">
+    <lowercase/>
+  </stringutil>
+  <checksum file="C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-cli\target/spring-boot-cli-1.2.0.BUILD-SNAPSHOT-bin.tar.gz" property="checksum" algorithm="sha-1"/>
+  <echo message="Customizing homebrew for 1.2.0.BUILD-SNAPSHOT with checksum ${checksum} in ${repo} repo"/>
+  <copy file="C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-cli/src/main/homebrew/springboot.rb" tofile="C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-cli\target/springboot.rb" overwrite="true">
+    <filterchain>
+      <expandproperties/>
+    </filterchain>
+  </copy>
+  <attachartifact file="C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-cli\target/springboot.rb" classifier="homebrew" type="rb"/>
+</target>
+</project>

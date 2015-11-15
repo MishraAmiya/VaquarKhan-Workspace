@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link href="./../resources/css/default.css" rel="stylesheet"
+		type="text/css" />
+	<link href="./../resources/css/cssLayout.css" rel="stylesheet"
+		type="text/css" />
+	<title>Facelets Template</title>
+	<style>
+.imagedropshadow {
+	padding: 5px;
+	border: solid 1px #EFEFEF;
+}
+
+a:hover div.imagedropshadow {
+	border: solid 1px #CCC;
+	-moz-box-shadow: 1px 1px 5px #999;
+	-webkit-box-shadow: 1px 1px 5px #999;
+	box-shadow: 1px 1px 5px #999;
+}
+</style>
+</h:head>
+
+<h:body>
+
+<ui:composition template="./../admin/adminTemplate.xhtml">
+
+      <ui:define name="title">
+        School Management - Admin Home
+      </ui:define>
+
+      <ui:define name="content">
+        <h1  style="text-align: center;border: none;">Welcome to Administration Panel</h1>
+        <h:panelGrid columns="3" cellpadding="20">
+        <!--  -->
+	<div style="padding-top: 5px; padding-bottom: 5px; border: solid 1px #CCC; -moz-box-shadow: 1px 1px 5px #999; -webkit-box-shadow: 1px 1px 5px #999; box-shadow: 1px 1px 5px #999;">
+		<h1 style="text-align: center; border: none;">Welcome to Chart Panel</h1>
+	</div>
+	<div id="top_0">
+
+		<h:form>
+			<h:panelGroup>
+				<label for="Selection"><h4>Select Chart Type</h4></label>
+				<br />
+				<h:selectOneMenu value="#{userData.data}">
+					<f:selectItem itemValue="1" itemLabel="Pie-Chart" />
+					<f:selectItem itemValue="2" itemLabel="Bar-Chart" />
+				</h:selectOneMenu>
+				<h:commandButton value="Submit" action="result" />
+			</h:panelGroup>
+		</h:form>
+	</div>
+	
+	<c:choose>
+		<c:when test="#{userData.data eq '1'}">
+			<div id="top_1">
+				<p:chart type="pie" model="#{chartView.pieModel1}"
+					style="width:400px;height:300px" />
+			</div>
+		</c:when>
+		<c:otherwise>
+			<div id="top_1">
+				<p:chart type="bar" model="#{chartView.barModel}"
+					style="height:300px" />
+				<p:chart type="bar" model="#{chartView.horizontalBarModel}"
+					style="height:300px" />
+			</div>
+		</c:otherwise>
+	</c:choose>
+<!--  -->
+
+
+        </h:panelGrid>
+      </ui:define>
+
+    </ui:composition>
+
+</h:body>
+
+</html>

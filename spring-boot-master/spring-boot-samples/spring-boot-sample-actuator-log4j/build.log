@@ -1,0 +1,14 @@
+[INFO] Scanning for projects...
+[INFO] Downloading: file:///C:/Users/Vaquar khan/.m2/repository/org/springframework/boot/spring-boot-samples/1.2.0.BUILD-SNAPSHOT/maven-metadata.xml
+[INFO] Downloading: file:///C:/Users/Vaquar khan/.m2/repository/org/springframework/boot/spring-boot-samples/1.2.0.BUILD-SNAPSHOT/spring-boot-samples-1.2.0.BUILD-SNAPSHOT.pom
+[ERROR] The build could not read 1 project -> [Help 1]
+[ERROR]   
+[ERROR]   The project org.springframework.boot:spring-boot-sample-actuator-log4j:1.2.0.BUILD-SNAPSHOT (C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-samples\spring-boot-sample-actuator-log4j\interpolated-pom.xml) has 1 error
+[ERROR]     Non-resolvable parent POM: Could not find artifact org.springframework.boot:spring-boot-samples:pom:1.2.0.BUILD-SNAPSHOT in local.central (file:///C:/Users/Vaquar khan/.m2/repository) and 'parent.relativePath' points at wrong local POM @ line 4, column 10 -> [Help 2]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException
+[ERROR] [Help 2] http://cwiki.apache.org/confluence/display/MAVEN/UnresolvableModelException

@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Implementation-Title: Spring Boot Loader
+Implementation-Version: 1.2.0.BUILD-SNAPSHOT
+Archiver-Version: Plexus Archiver
+Built-By: Vaquar khan
+Specification-Vendor: Pivotal Software, Inc.
+Specification-Title: Spring Boot Loader
+Implementation-Vendor-Id: org.springframework.boot
+Created-By: Apache Maven 3.1.1
+Build-Jdk: 1.8.0_20
+Specification-Version: 1.2.0.BUILD-SNAPSHOT
+Implementation-Vendor: Pivotal Software, Inc.
+

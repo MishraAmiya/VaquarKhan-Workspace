@@ -1,0 +1,22 @@
+1441997600090	Delete elements
+1441997611609	Delete elements
+1441997617688	Delete element
+1441997665669	Move elements
+1441997672913	Delete element
+1442087400044	Rename package 'eu.kielczewski.example'
+1442087426966	Rename package 'eu.kielczewski.example.config'
+1442087449679	Rename package 'eu.kielczewski.example.controller'
+1442087470939	Rename package 'eu.kielczewski.example.domain'
+1442087496612	Rename package 'eu.kielczewski.example.domain.validator'
+1442087520246	Rename package 'eu.kielczewski.example.repository'
+1442087543365	Rename package 'eu.kielczewski.example.service.currentuser'
+1442087563537	Rename package 'eu.kielczewski.example.service.user'
+1442088667464	Rename package 'com.FinLeashed.java'
+1442088697373	Rename package 'com.FinLeashed.java.service.user'
+1442088721849	Rename package 'com.FinLeashed.java.service.currentuser'
+1442088745321	Rename package 'com.FinLeashed.java.repository'
+1442088770151	Rename package 'com.FinLeashed.java.domain.validator'
+1442088795338	Rename package 'com.FinLeashed.java.domain'
+1442088818409	Rename package 'com.FinLeashed.java.controller'
+1442088843067	Rename package 'com.FinLeashed.java.config'
+1442089096100	Move compilation unit

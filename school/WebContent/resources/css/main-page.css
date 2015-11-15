@@ -1,0 +1,42 @@
+* {
+ margin:0;
+ padding:0;
+ }
+ #page {
+   margin:10px auto;
+   background-color : white;
+    min-height:300px;
+    width:60pc;
+    min-width:600px;
+
+ }
+ #header{
+ height:100px;
+
+ }
+ #menu{
+ height:50px;
+
+ }
+ 
+ #pagefooter{
+ height:50px;
+ background-color:black;
+ position:relative;
+ }
+ 
+ #main{
+ overflow:hidden;
+ align:center;
+ margin:0;
+ }
+ 
+ #sidebar{
+  width:150px;
+  float:left;
+ }
+ 
+  #pagecontent{
+  float:left;
+  
+ }

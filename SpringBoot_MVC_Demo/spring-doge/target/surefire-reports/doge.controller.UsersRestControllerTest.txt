@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: doge.controller.UsersRestControllerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.667 sec - in doge.controller.UsersRestControllerTest

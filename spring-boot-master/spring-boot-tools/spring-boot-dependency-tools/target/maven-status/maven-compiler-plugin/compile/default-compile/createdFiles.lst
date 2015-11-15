@@ -1,0 +1,11 @@
+org\springframework\boot\dependency\tools\PropertiesFileDependencies.class
+org\springframework\boot\dependency\tools\AbstractDependencies$ArtifactAndGroupId.class
+org\springframework\boot\dependency\tools\Dependency$Exclusion.class
+org\springframework\boot\dependency\tools\Assert.class
+org\springframework\boot\dependency\tools\AbstractDependencies.class
+org\springframework\boot\dependency\tools\PomDependencies.class
+org\springframework\boot\dependency\tools\Dependencies.class
+org\springframework\boot\dependency\tools\Dependency.class
+org\springframework\boot\dependency\tools\ManagedDependencies.class
+org\springframework\boot\dependency\tools\ManagedDependencies$1.class
+org\springframework\boot\dependency\tools\ManagedDependenciesDelegate.class

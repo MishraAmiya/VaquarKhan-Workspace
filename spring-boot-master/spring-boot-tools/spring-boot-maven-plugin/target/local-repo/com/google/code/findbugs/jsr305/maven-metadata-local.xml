@@ -1,0 +1,10 @@
+<metadata>
+  <groupId>com.google.code.findbugs</groupId>
+  <artifactId>jsr305</artifactId>
+  <versioning>
+    <versions>
+      <version>1.3.9</version>
+    </versions>
+    <lastUpdated>20140922203537</lastUpdated>
+  </versioning>
+</metadata>

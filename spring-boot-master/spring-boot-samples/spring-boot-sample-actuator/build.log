@@ -1,0 +1,12 @@
+[INFO] Scanning for projects...
+[ERROR] The build could not read 1 project -> [Help 1]
+[ERROR]   
+[ERROR]   The project [unknown-group-id]:spring-boot-sample-actuator:[unknown-version] (C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-samples\spring-boot-sample-actuator\interpolated-pom.xml) has 2 errors
+[ERROR]     'groupId' is missing. @ line 2, column 205
+[ERROR]     'version' is missing. @ line 2, column 205
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException

@@ -1,0 +1,12 @@
+org\springframework\boot\maven\RepackageMojo.class
+org\springframework\boot\maven\Exclude.class
+org\springframework\boot\maven\MatchingGroupIdFilter.class
+org\springframework\boot\maven\RepackageMojo$LayoutType.class
+org\springframework\boot\maven\RunMojo.class
+org\springframework\boot\maven\AbstractDependencyFilterMojo.class
+org\springframework\boot\maven\ExcludeFilter.class
+org\springframework\boot\maven\RunMojo$TestArtifactFilter.class
+org\springframework\boot\maven\PropertiesMergingResourceTransformer.class
+org\springframework\boot\maven\RunArguments.class
+org\springframework\boot\maven\ArtifactsLibraries.class
+org\springframework\boot\maven\RepackageMojo$1.class

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.springframework.boot.cli.SampleIntegrationTests
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 140.151 sec - in org.springframework.boot.cli.SampleIntegrationTests

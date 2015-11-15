@@ -1,0 +1,104 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] jar-lib-name-conflict
+[INFO] acme-lib
+[INFO] acme-lib
+[INFO] test-project
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jar-lib-name-conflict 0.0.1.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building acme-lib 0.0.1.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ acme-lib ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\target\it\jar-lib-name-conflict\acme-lib\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ acme-lib ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ acme-lib ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\target\it\jar-lib-name-conflict\acme-lib\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ acme-lib ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ acme-lib ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ acme-lib ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\target\it\jar-lib-name-conflict\acme-lib\target\acme-lib-0.0.1.BUILD-SNAPSHOT.jar
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building acme-lib 0.0.1.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ acme-lib ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\target\it\jar-lib-name-conflict\another-acme-lib\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ acme-lib ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ acme-lib ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\target\it\jar-lib-name-conflict\another-acme-lib\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ acme-lib ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ acme-lib ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ acme-lib ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\target\it\jar-lib-name-conflict\another-acme-lib\target\acme-lib-0.0.1.BUILD-SNAPSHOT.jar
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building test-project 0.0.1.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ test-project ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\target\it\jar-lib-name-conflict\test-project\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ test-project ---
+[INFO] Compiling 1 source file to C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\target\it\jar-lib-name-conflict\test-project\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ test-project ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\target\it\jar-lib-name-conflict\test-project\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ test-project ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ test-project ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ test-project ---
+[INFO] Building jar: C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\target\it\jar-lib-name-conflict\test-project\target\test-project-0.0.1.BUILD-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:1.2.0.BUILD-SNAPSHOT:repackage (default) @ test-project ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] jar-lib-name-conflict ............................. SUCCESS [0.000s]
+[INFO] acme-lib .......................................... SUCCESS [2.777s]
+[INFO] acme-lib .......................................... SUCCESS [0.109s]
+[INFO] test-project ...................................... SUCCESS [3.448s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.552s
+[INFO] Finished at: Tue Sep 23 02:07:11 IST 2014
+[INFO] Final Memory: 17M/204M
+[INFO] ------------------------------------------------------------------------
+Running post-build script: C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\target\it\jar-lib-name-conflict\verify.groovy
+Finished post-build script: C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\target\it\jar-lib-name-conflict\verify.groovy

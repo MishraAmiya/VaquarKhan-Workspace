@@ -1,0 +1,5 @@
+main\dao\ProductRepositoryImpl.class
+main\model\Product.class
+main\service\ProductService.class
+main\dao\ProductRepository.class
+main\dao\ProductRepositoryCustom.class

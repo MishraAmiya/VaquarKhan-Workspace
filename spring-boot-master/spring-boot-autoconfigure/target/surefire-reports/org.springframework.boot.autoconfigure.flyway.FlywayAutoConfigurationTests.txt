@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.springframework.boot.autoconfigure.flyway.FlywayAutoConfigurationTests
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.071 sec - in org.springframework.boot.autoconfigure.flyway.FlywayAutoConfigurationTests

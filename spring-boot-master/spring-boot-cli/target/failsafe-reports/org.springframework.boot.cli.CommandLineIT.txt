@@ -1,0 +1,50 @@
+-------------------------------------------------------------------------------
+Test set: org.springframework.boot.cli.CommandLineIT
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 3.108 sec <<< FAILURE! - in org.springframework.boot.cli.CommandLineIT
+hintProducesListOfValidCommands(org.springframework.boot.cli.CommandLineIT)  Time elapsed: 1.072 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: <0>
+     but: was <1>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:865)
+	at org.junit.Assert.assertThat(Assert.java:832)
+	at org.springframework.boot.cli.CommandLineIT.hintProducesListOfValidCommands(CommandLineIT.java:44)
+
+help(org.springframework.boot.cli.CommandLineIT)  Time elapsed: 0.873 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: <0>
+     but: was <86>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:865)
+	at org.junit.Assert.assertThat(Assert.java:832)
+	at org.springframework.boot.cli.CommandLineIT.help(CommandLineIT.java:80)
+
+version(org.springframework.boot.cli.CommandLineIT)  Time elapsed: 0.302 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: <0>
+     but: was <1>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:865)
+	at org.junit.Assert.assertThat(Assert.java:832)
+	at org.springframework.boot.cli.CommandLineIT.version(CommandLineIT.java:71)
+
+unrecognizedCommandsAreHandledGracefully(org.springframework.boot.cli.CommandLineIT)  Time elapsed: 0.265 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: a string containing "'not-a-real-command' is not a valid command"
+     but: was "Error: Could not find or load main class org.springframework.boot.loader.JarLauncher
+"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:865)
+	at org.junit.Assert.assertThat(Assert.java:832)
+	at org.springframework.boot.cli.CommandLineIT.unrecognizedCommandsAreHandledGracefully(CommandLineIT.java:63)
+
+invokingWithNoArgumentsDisplaysHelp(org.springframework.boot.cli.CommandLineIT)  Time elapsed: 0.427 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: <0>
+     but: was <86>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:865)
+	at org.junit.Assert.assertThat(Assert.java:832)
+	at org.springframework.boot.cli.CommandLineIT.invokingWithNoArgumentsDisplaysHelp(CommandLineIT.java:54)
+

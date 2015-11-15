@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.springframework.boot.actuate.autoconfigure.AuditAutoConfigurationTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.759 sec - in org.springframework.boot.actuate.autoconfigure.AuditAutoConfigurationTests

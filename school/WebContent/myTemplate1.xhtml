@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<h:html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+  <h:head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="resources/css/cssLayout.css"/>
+    <link rel="stylesheet" type="text/css" href="resources/css/main-page.css"/>
+ 
+    <title>Facelets Template</title>
+  </h:head>
+
+  <h:body>
+    <div id="page" >
+            <div id="header">
+              
+                    <ui:include src="header.xhtml" />
+            
+            </div>
+     
+                <div id="menu">
+               
+	        </div>
+            
+
+  <div id="main">
+       
+            <div id="sidebar" >
+                <ui:insert name="right">
+                   
+                </ui:insert>
+            </div>
+    
+            <div id="pagecontent"  >
+  			 <p:panel  styleClass="menu">              
+                  <ul>
+                  	<li><h:link value="Home" outcome="/index"/></li>
+                 	 <li><h:link value="Notice" outcome="/public/publicNotice"/></li>
+                  	<li><h:link value="Result"  outcome="/public/publicResult"/></li>
+                  	<li><h:link value="About us" outcome="/about"/></li>            
+                  	<li><h:link value="Contact us" outcome="/public/contactus"/></li>
+                  </ul>
+                </p:panel>
+                <ui:insert name="content">
+                    Main content
+                </ui:insert>
+		
+		</div>
+</div>   
+        
+ 
+        
+            <div id="pagefooter">
+                <ui:insert name="footer">
+                    <ui:include src="footer.xhtml" />
+                </ui:insert>
+            </div>
+        
+
+    </div>
+
+</h:body>
+
+</h:html>

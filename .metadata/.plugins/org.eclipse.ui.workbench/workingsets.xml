@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1412190805864_1" label="Java-8" name="Java-8">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Java8_Demo_project" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1410643285285_0" label="Window Working Set" name="Aggregate for window 1410643285285"/>
+</workingSetManager>

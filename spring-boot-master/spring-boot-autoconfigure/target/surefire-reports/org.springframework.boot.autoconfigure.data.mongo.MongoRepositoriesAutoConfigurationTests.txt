@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.springframework.boot.autoconfigure.data.mongo.MongoRepositoriesAutoConfigurationTests
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.135 sec - in org.springframework.boot.autoconfigure.data.mongo.MongoRepositoriesAutoConfigurationTests

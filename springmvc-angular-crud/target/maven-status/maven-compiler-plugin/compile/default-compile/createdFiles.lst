@@ -1,0 +1,17 @@
+com\sivalabs\angularcrud\config\AppConfig.class
+com\sivalabs\angularcrud\config\SecurityConfig.class
+com\sivalabs\angularcrud\services\CustomUserDetailsService.class
+com\sivalabs\angularcrud\config\DBInitializer.class
+com\sivalabs\angularcrud\web\controllers\ContactController.class
+com\sivalabs\angularcrud\web\config\SpringWebAppInitializer.class
+com\sivalabs\angularcrud\repositories\RoleRepository.class
+com\sivalabs\angularcrud\repositories\UserRepository.class
+com\sivalabs\angularcrud\entities\Role.class
+com\sivalabs\angularcrud\services\UserService.class
+com\sivalabs\angularcrud\entities\Contact.class
+com\sivalabs\angularcrud\entities\User.class
+com\sivalabs\angularcrud\services\EmailService.class
+com\sivalabs\angularcrud\web\controllers\UserController.class
+com\sivalabs\angularcrud\web\config\WebMvcConfig.class
+com\sivalabs\angularcrud\model\SecurityUser.class
+com\sivalabs\angularcrud\repositories\ContactRepository.class

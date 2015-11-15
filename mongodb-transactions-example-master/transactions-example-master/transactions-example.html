@@ -1,0 +1,64 @@
+<head>
+  <title>transactions-example</title>
+</head>
+
+<body>
+  <a href="https://github.com/JackAdams/transactions-example"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+  <div class="container" style="text-align:center;">
+    {{> demo}}
+  </div>
+</body>
+
+<template name="demo">
+  <div id="wrapper">
+    {{> loginButtons}}
+    <div id="buttons-wrapper">
+      {{> undoRedoButtons}}
+    </div>
+    <h2 id="instructions">Edit the documents below then use the undo/redo buttons</h2>
+    {{#unless currentUser}}
+      {{#unless loggingIn}}
+        <br />
+        <div class="alert alert-info">
+          <h4>Login using:</h4>
+          username: <strong>demo</strong><br />
+          password: <strong>password</strong><br /><br />
+          ... or create your own account so you have your own personal undo/redo stack
+        </div>
+      {{/unless}}
+    {{/unless}}
+    <br />
+    <div style="{{#unless currentUser}}opacity:0.3;{{/unless}}">
+      <table>
+        <thead>
+          <tr>
+            <td>Documents</td>
+            {{#each fieldNames}}
+              <td class="field-name">{{name}}<i class="clear-field fa fa-eraser" title="Clear this field"></i></td>
+            {{/each}}
+            <td></td>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each documents}}
+            <tr>
+              <td>{{name}}</td>
+              {{#each fields}}
+                <td class="edit-field">
+                  {{#if editing}}
+                    <input type="text" value="{{value}}" id="edit-field" />
+                  {{else}}
+                    {{value}}
+                  {{/if}}
+                </td>
+              {{/each}}
+              <td class="delete"><i class="fa fa-times"></i></td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+      <input type="button" id="add-document" class="btn btn-info" value="Add new document" />
+      {{#if documentCount}}<input type="button" id="delete-documents" class="btn btn-danger" value="Remove all documents" />{{/if}}
+    </div>
+  </div>
+</template>

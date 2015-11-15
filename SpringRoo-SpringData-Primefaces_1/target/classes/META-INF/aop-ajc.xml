@@ -1,0 +1,17 @@
+<aspectj>
+<aspects>
+<aspect name="com.school.jsf.converter.TimerConverter_Roo_Converter"/>
+<aspect name="com.school.jsf.ApplicationBean_Roo_Configurable"/>
+<aspect name="com.school.jsf.converter.TimerConverter_Roo_Configurable"/>
+<aspect name="com.school.domain.Timer_Roo_JavaBean"/>
+<aspect name="com.school.jsf.ApplicationBean_Roo_ApplicationBean"/>
+<aspect name="com.school.domain.Timer_Roo_Configurable"/>
+<aspect name="com.school.domain.Timer_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.school.jsf.TimerBean_Roo_Configurable"/>
+<aspect name="com.school.domain.Timer_Roo_Jpa_Entity"/>
+<aspect name="com.school.jsf.TimerBean_Roo_ManagedBean"/>
+<aspect name="com.school.domain.Timer_Roo_ToString"/>
+<aspect name="com.school.jsf.TimerBean_Roo_Serializable"/>
+</aspects>
+</aspectj>
+

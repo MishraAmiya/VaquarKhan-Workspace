@@ -1,0 +1,12 @@
+doge\Application$MetricsConfiguration$GraphiteCondition.class
+doge\Application$1.class
+doge\domain\DogePhoto.class
+doge\service\DogeService.class
+doge\ServletInitializer.class
+doge\domain\DogePhotoRepository.class
+doge\Application$WebSocketConfiguration.class
+doge\Application$MetricsConfiguration.class
+doge\controller\UsersRestController.class
+doge\domain\UserRepository.class
+doge\Application.class
+doge\domain\User.class

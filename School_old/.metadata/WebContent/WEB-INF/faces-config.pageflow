@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14289579792220" configfile="/School_old/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="*" x="122" y="562" id="pf14290368920550" referenceLink="//@navigationRule.2/@fromViewId|" outlinks="pf14290368920561 pf14290368920562 pf14290368920563" path="/*"/>
+  <nodes xsi:type="pageflow:PFPage" name="admin/adminPanel.xhtml" x="338" y="178" id="pf14290368920565" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf14290368920561" path="/admin/adminPanel.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="teacher/teacherHome.xhtml" x="338" y="562" id="pf14290368920566" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf14290368920562" path="/teacher/teacherHome.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="student/studentHome.xhtml" x="338" y="946" id="pf14290368920567" referenceLink="//@navigationRule.2/@navigationCase.0/@toViewId|" inlinks="pf14290368920563" path="/student/studentHome.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" x="338" y="1522" id="pf14290368920568" referenceLink="//@navigationRule.8/@navigationCase.0/@toViewId|" outlinks="pf14290368920569" inlinks="pf14290368920569 pf142903689205610 pf142903689205611 pf142903689205612 pf142903689205613" path="/index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="admin/*" x="122" y="946" id="pf142903689205614" referenceLink="//@navigationRule.5/@fromViewId|" outlinks="pf142903689205610" path="/admin/*"/>
+  <nodes xsi:type="pageflow:PFPage" name="public/*" x="122" y="1330" id="pf142903689205615" referenceLink="//@navigationRule.6/@fromViewId|" outlinks="pf142903689205611" path="/public/*"/>
+  <nodes xsi:type="pageflow:PFPage" name="teacher/*" x="122" y="1714" id="pf142903689205616" referenceLink="//@navigationRule.7/@fromViewId|" outlinks="pf142903689205612" path="/teacher/*"/>
+  <nodes xsi:type="pageflow:PFPage" name="student/*" x="122" y="2098" id="pf142903689205617" referenceLink="//@navigationRule.8/@fromViewId|" outlinks="pf142903689205613" path="/student/*"/>
+  <nodes xsi:type="pageflow:PFPage" name="admin/section.xhtml" x="122" y="2482" id="pf142903689205618" referenceLink="//@navigationRule.9/@fromViewId|" outlinks="pf142903689205619" path="/admin/section.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="marks.xhtml" x="338" y="2482" id="pf142903689205620" referenceLink="//@navigationRule.9/@navigationCase.0/@toViewId|" inlinks="pf142903689205619" path="/marks.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="charts/*" id="pf14293866470806" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf14293866470807" path="/charts/*"/>
+  <nodes xsi:type="pageflow:PFPage" name="chartsTemplate.xhtml" id="pf14293866470808" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" inlinks="pf14293866470807" path="/chartsTemplate.xhtml"/>
+  <links id="pf14290368920561" target="pf14290368920565" source="pf14290368920550" outcome="adminhome" redirect="true"/>
+  <links id="pf14290368920562" target="pf14290368920566" source="pf14290368920550" outcome="teacherhome" redirect="true"/>
+  <links id="pf14290368920563" target="pf14290368920567" source="pf14290368920550" outcome="studenthome" redirect="true"/>
+  <links id="pf142903689205610" target="pf14290368920568" source="pf142903689205614" outcome="logout" redirect="true"/>
+  <links id="pf142903689205611" target="pf14290368920568" source="pf142903689205615" outcome="logout" redirect="true"/>
+  <links id="pf142903689205612" target="pf14290368920568" source="pf142903689205616" outcome="logout" redirect="true"/>
+  <links id="pf142903689205613" target="pf14290368920568" source="pf142903689205617" outcome="logout" redirect="true"/>
+  <links id="pf142903689205619" target="pf142903689205620" source="pf142903689205618" outcome="marks" redirect="true"/>
+  <links id="pf14290368920569" target="pf14290368920568" source="pf14290368920568" outcome="logout" redirect="true">
+    <bendPoints d1Height="-36" d2Height="-36"/>
+    <bendPoints d1Width="-64" d1Height="-36" d2Width="-64" d2Height="-36"/>
+    <bendPoints d1Width="-64" d2Width="-64"/>
+  </links>
+  <links id="pf14293866470807" target="pf14293866470808" source="pf14293866470806" outcome="Charts" redirect="true"/>
+</pageflow:Pageflow>

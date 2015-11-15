@@ -1,6 +1,8 @@
 com\pilligram\phase1\dao\TaskRepository.class
 com\pilligram\phase1\model\Task.class
 com\pilligram\phase1\springservice\Application.class
+com\pilligram\phase1\springservice\WebAppInitializer.class
 com\pilligram\phase1\controller\HomeController.class
+com\pilligram\phase1\controller\NavigaionController.class
 com\pilligram\phase1\model\AdminTask.class
 com\pilligram\phase1\dao\AdminTaskRepository.class

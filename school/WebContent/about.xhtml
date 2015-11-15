@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <body>
+
+        <ui:composition template="./myTemplate.xhtml">
+         
+            <ui:define name="title">
+              School Management - about
+            </ui:define>
+
+            <ui:define name="content">
+                <h1 class="pgheader" style="font-size: 14pt;border: none;margin-left: 20px;">About us</h1>
+                <p align="justify" style="text-indent: 30px;margin-left: 30px;margin-right: 30px;line-height: 1.5em;">
+                  text to add
+                  <a href="...." target="_blank"  style="text-decoration: underline;">link</a>.
+                </p>
+              
+                <p align="justify" style="text-indent: 30px;margin-left: 30px;margin-right: 30px;line-height: 1.5em;">
+                  To find us  <h:link outcome="/public/contactus.xhtml" value="click here" style="text-decoration: underline;"/>
+                  
+                </p>
+            </ui:define>
+           
+        </ui:composition>
+
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="SpringData"
+		transaction-type="RESOURCE_LOCAL">
+		<class>net.javabeat.springdata.jpa.data.Employee</class>
+		<class>net.javabeat.springdata.jpa.data.Address</class>
+		<class>model.SchAcademicYear</class>
+		<class>model.SchClassName</class>
+		<class>model.SchClassTimeTableLine</class>
+		<class>model.SchDayPeriod</class>
+		<class>model.SchExamTitle</class>
+		<class>model.SchRegFee</class>
+		<class>model.SchSchoolNotice</class>
+		<class>model.SchSectionName</class>
+		<class>model.SchStdAttendance</class>
+		<class>model.SchStdContactInfo</class>
+		<class>model.SchStdGroup</class>
+		<class>model.SchStdMark</class>
+		<class>model.SchStdRegistration</class>
+		<class>model.SchStudentInfo</class>
+		<class>model.SchSubject</class>
+		<class>model.SchTeacherGrade</class>
+		<class>model.SchTeacherInfo</class>
+		<class>model.SchTeacherSubAssign</class>
+		<class>model.SchTimeTable</class>
+		<class>model.SchUser</class>
+		<class>model.SchUserRole</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/javabeat" />
+			<property name="javax.persistence.jdbc.user" value="root" />
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.password" value="admin" />
+			<property name="eclipselink.logging.level" value="OFF" />
+		</properties>
+	</persistence-unit>
+</persistence>

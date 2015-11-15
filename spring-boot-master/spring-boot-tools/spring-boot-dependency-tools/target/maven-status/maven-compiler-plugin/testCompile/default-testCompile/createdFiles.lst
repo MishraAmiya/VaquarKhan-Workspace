@@ -1,0 +1,5 @@
+org\springframework\boot\dependency\tools\ManagedDependenciesTests$1.class
+org\springframework\boot\dependency\tools\ManagedDependenciesTests.class
+org\springframework\boot\dependency\tools\PropertiesFileDependenciesTests.class
+org\springframework\boot\dependency\tools\PomDependenciesTests.class
+org\springframework\boot\dependency\tools\ManagedDependenciesDelegateTests.class

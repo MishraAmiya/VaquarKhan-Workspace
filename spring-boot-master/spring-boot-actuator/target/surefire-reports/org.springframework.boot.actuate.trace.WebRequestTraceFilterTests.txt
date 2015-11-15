@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.springframework.boot.actuate.trace.WebRequestTraceFilterTests
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.springframework.boot.actuate.trace.WebRequestTraceFilterTests

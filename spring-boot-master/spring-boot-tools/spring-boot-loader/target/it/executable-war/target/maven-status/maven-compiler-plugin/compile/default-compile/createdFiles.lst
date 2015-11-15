@@ -1,0 +1,6 @@
+org\springframework\boot\load\it\war\embedded\WebApplicationInitializersConfiguration.class
+org\springframework\boot\load\it\war\ExampleController.class
+org\springframework\boot\load\it\war\SpringConfiguration.class
+org\springframework\boot\load\it\war\embedded\EmbeddedWarStarter.class
+org\springframework\boot\load\it\war\SpringInitializer.class
+org\springframework\boot\load\it\war\embedded\WebApplicationInitializersConfiguration$1.class

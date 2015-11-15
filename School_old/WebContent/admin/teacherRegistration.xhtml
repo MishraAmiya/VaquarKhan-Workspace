@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+<!-- <script language="javascript" type="text/javascript">
+<![CDATA[
+$("input[type=file].imagesOnlyMax10MB").attr("accept", "image/*").on("change", function() {
+    var max = 1 * 1024 * 1024; // 1MB
+alert("inside");
+    if (this.files && this.files[0].size > max) {
+        alert("File too large."); // Do your thing to handle the error.
+        this.value = null; // Clears the field.
+    }
+});
+]]>
+</script>
+ -->
+</h:head>
+  <body>
+
+    <ui:composition template="./adminTemplate.xhtml">
+
+
+      <ui:define name="title">
+        School Management - Admin - Registration info
+      </ui:define>
+
+      <ui:define name="content">
+        <f:view>
+          <h:form enctype="multipart/form-data">
+            <p:panel id="all" style="font-size: 9pt">
+              <p:growl showDetail="true" id="g"/>
+              <p:fieldset legend="Teacher Basic Information">
+                <h:panelGrid columns="3" cellpadding="7" style="margin: 0 auto">                 
+
+                  <p:outputLabel value="Teacher Name :"/>
+                  <p:inputText value="#{teacherBean.teacherName}" id="teacher" required="true" requiredMessage="please enter teacher Name"/>
+                  <p:message for="teacher"/>
+                  
+                   <p:outputLabel value="Subject Name :" />
+                  <p:selectOneMenu id="sub" value="#{teacherBean.subjectId}" required="true" requiredMessage="Please select subject name" style="width: 150px">
+                    <f:selectItem itemLabel="--Select--" itemValue=""/>
+                    <f:selectItems value="#{teacherBean.allSubject}" var="sub" itemLabel="#{sub.subject}" itemValue="#{sub.subjectId}"/>                                       
+                  </p:selectOneMenu>
+                  <p:message for="sub"/>
+                  
+                  <p:outputLabel value="Mobile Num :"/>
+                  <p:inputText value="#{teacherBean.teacherMobile}" id="mobile" required="true" requiredMessage="please enter teacher mobile"  validatorMessage="Invalid mobile no"
+                  >
+                  <f:validateRegex pattern="[0-9]*"  />
+                  </p:inputText>
+                  <p:message for="mobile"/>
+
+                  <p:outputLabel value="Present Address :"/>
+                  <p:inputTextarea value="#{teacherBean.teacherAddress}" id="addr" required="true" requiredMessage="please enter teacher address"/>
+                  <p:message for="addr"/>
+
+                  <p:outputLabel value="Joining Date :"/>
+                  <p:calendar value="#{teacherBean.teacherJoinDate}" id="join" required="true" requiredMessage="please enter joining date"/>
+                  <p:message for="join"/>
+
+                  <p:outputLabel value="Teacher Grade Name :" />
+                  <p:selectOneMenu id="grade" value="#{teacherBean.teacherGradeId}" required="true" requiredMessage="Please teacher grade" style="width: 150px">
+                    <f:selectItem itemLabel="--Select--" itemValue=""/>
+                    <f:selectItems value="#{teacherBean.allTeacherGrade}" var="gad" itemLabel="#{gad.teacherGrade}" itemValue="#{gad.teacherGradeId}"/>                                       
+                  </p:selectOneMenu>
+                  <p:message for="grade"/>
+
+                  <p:outputLabel value="Email"/>
+                  <p:inputText id="email" required="true" label="email" style="width: 150px"
+                               requiredMessage="Please enter your email address."
+                               validatorMessage="Invalid email format"
+                               value="#{teacherBean.teacherEmail}"> 
+                    <f:validateRegex
+                      pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$" />
+                  </p:inputText> 
+                  <p:message for="email"/>
+<!--                 
+								<p:outputLabel value="Resignation  :" />
+								 <h:selectBooleanCheckbox value="#{teacherBean.active}" id="active" required="true" requiredMessage="please Check  Ex employee checkbox" /> 
+								<p:message for="active" />
+								
+
+								<p:outputLabel value="Departure Date :" />
+								<p:calendar value="#{teacherBean.departDate}" id="dp" required="true" requiredMessage="please enter Departure Date" />
+								<p:message for="dp" />
+ -->								
+                </h:panelGrid>
+              </p:fieldset>
+              <br/>
+
+              <p:fieldset legend="Others Information">
+                <h:panelGrid columns="3" cellpadding="7" style="margin: 0 auto">
+                  <p:outputLabel value="User Type :" />
+                  <p:selectOneMenu id="ut" value="#{teacherBean.roleId}" required="true" requiredMessage="Please select user type" style="width: 150px">
+                    <f:selectItem itemLabel="--Select--" itemValue=""/>
+                    <f:selectItems value="#{teacherBean.allUserType}" var="utype" itemLabel="#{utype.roleName}" itemValue="#{utype.roleId}"/>                           
+                  </p:selectOneMenu>
+                  <p:message for="ut"/>
+
+                  <p:outputLabel value="User Name :"/>
+                  <p:inputText id="unn" value="#{teacherBean.userName}" required="true" requiredMessage="please enter User Name" style="color: palevioletred"/>
+                  <p:message for="unn"/>
+
+                  <p:outputLabel value="Password :"/>
+                  <p:password id="psss" value="#{teacherBean.newPassword}" required="true" requiredMessage="please enter password" style="color: peru"/>
+                  <p:message for="psss"/>
+
+                  <p:outputLabel value="Confirm Password :"/>
+                  <p:password id="cpsss" value="#{teacherBean.confirmPassword}" required="true" requiredMessage="please enter password" style="color: peru"/>
+                  <p:message for="cpsss"/>
+
+                  <p:outputLabel value="Photo :"/>
+                  <p:fileUpload value="#{teacherBean.teacherPhoto}" mode="simple"   id="photo" allowTypes="/(\.|\/)(gif|jpe?g|png)$/"  sizeLimit="1000000" required="true" 
+                  requiredMessage="Please select photo" />
+                  <p:message for="photo"/>   
+                        
+                </h:panelGrid>
+                <h:panelGrid columns="1" style="margin: 0 auto;">
+                  <p:commandButton value="submit" action="#{teacherBean.doInsert()}" update="all,g" ajax="false"/>
+                </h:panelGrid>
+              </p:fieldset>
+            </p:panel>
+          </h:form>
+        </f:view>
+        
+          </ui:define>
+    </ui:composition>
+  </body>
+</html>

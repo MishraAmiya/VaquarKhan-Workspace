@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-versions</artifactId>
+  <version>1.2.0.BUILD-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <localCopy>true</localCopy>
+    </snapshot>
+    <lastUpdated>20140922203537</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>effective-pom</extension>
+        <value>1.2.0.BUILD-SNAPSHOT</value>
+        <updated>20140922203537</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>properties</extension>
+        <value>1.2.0.BUILD-SNAPSHOT</value>
+        <updated>20140922203537</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.2.0.BUILD-SNAPSHOT</value>
+        <updated>20140922203537</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

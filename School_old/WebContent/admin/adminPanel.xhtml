@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+ <head>
+ <style>
+ .imagedropshadow { padding: 5px; border: solid 1px #EFEFEF; } 
+ a:hover div.imagedropshadow { border: solid 1px #CCC; -moz-box-shadow: 1px 1px 5px #999; -webkit-box-shadow: 1px 1px 5px #999; box-shadow: 1px 1px 5px #999; }
+ </style>
+ </head>
+ 
+  <body>
+
+	<ui:composition template="./adminTemplate.xhtml">
+
+		<ui:define name="title">
+        School Management - Admin Home
+      </ui:define>
+
+		<ui:define name="content">
+			<h1 style="text-align: center; border: none;">Welcome to
+				Administration Panel</h1>
+
+			<h:panelGrid columns="3" cellpadding="20">
+
+			<h:link outcome="student.xhtml">
+            <div style="padding-top:5px;padding-bottom:5px; border: solid 1px #CCC; -moz-box-shadow: 1px 1px 5px #999; -webkit-box-shadow: 1px 1px 5px #999; box-shadow: 1px 1px 5px #999; ">
+            <p:graphicImage value="./../resources/images/student.png"/>
+            <h2 style="text-align: center;margin: 0;">Student</h2>
+          	</div>
+          </h:link>
+          <h:link outcome="teacher.xhtml">
+           <div style="padding-top:5px;padding-bottom:5px; border: solid 1px #CCC; -moz-box-shadow: 1px 1px 5px #999; -webkit-box-shadow: 1px 1px 5px #999; box-shadow: 1px 1px 5px #999; ">
+            <p:graphicImage value="./../resources/images/teacher.png"/>
+            <h2 style="text-align: center;margin: 0;">Teacher</h2>
+           </div>
+          </h:link>
+          
+          <h:link outcome="acyear.xhtml">
+          <div style="padding-top:5px;padding-bottom:5px; border: solid 1px #CCC; -moz-box-shadow: 1px 1px 5px #999; -webkit-box-shadow: 1px 1px 5px #999; box-shadow: 1px 1px 5px #999; ">
+            <p:graphicImage value="./../resources/images/academics.jpg"/>
+            </div>
+          </h:link>
+          <h:link outcome="registration.xhtml">
+              <div style="padding-top:5px;padding-bottom:5px; border: solid 1px #CCC; -moz-box-shadow: 1px 1px 5px #999; -webkit-box-shadow: 1px 1px 5px #999; box-shadow: 1px 1px 5px #999; ">
+            <p:graphicImage value="./../resources/images/admission.jpg"/>            
+            </div>
+          </h:link>
+          <h:link outcome="classRoutine.xhtml">
+            <div style="padding-top:5px;padding-bottom:5px; border: solid 1px #CCC; -moz-box-shadow: 1px 1px 5px #999; -webkit-box-shadow: 1px 1px 5px #999; box-shadow: 1px 1px 5px #999; ">
+            <p:graphicImage value="./../resources/images/timetable.png"/>
+            </div>
+          </h:link> 
+		<h:outputLink value="chartsTemplate.xhtml">
+				<div style="padding-top: 5px; padding-bottom: 5px; border: solid 1px #CCC; -moz-box-shadow: 1px 1px 5px #999; -webkit-box-shadow: 1px 1px 5px #999; box-shadow: 1px 1px 5px #999;">
+					<p:graphicImage value="./../resources/images/charts.png" style="width: 95px; height: 130px; " alt="chart img" align="middle" />
+						<h2 style="text-align: center; margin: 0;">Charts</h2>
+				</div>
+		</h:outputLink>
+		
+		<h:outputLink value="Dashboard.xhtml">
+				<div style="padding-top: 5px; padding-bottom: 5px; border: solid 1px #CCC; -moz-box-shadow: 1px 1px 5px #999; -webkit-box-shadow: 1px 1px 5px #999; box-shadow: 1px 1px 5px #999;">
+					<p:graphicImage value="./../resources/images/charts.png" style="width: 95px; height: 130px; " alt="chart img" align="middle" />
+						<h2 style="text-align: center; margin: 0;">Charts Dashboard</h2>
+				</div>
+		</h:outputLink>
+							
+			</h:panelGrid>
+		</ui:define>
+
+	</ui:composition>
+
+</body>
+</html>

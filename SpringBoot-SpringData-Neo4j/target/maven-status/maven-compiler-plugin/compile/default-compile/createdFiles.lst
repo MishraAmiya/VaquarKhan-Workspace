@@ -1,0 +1,7 @@
+net\javabeat\springdata\controller\DataController.class
+net\javabeat\springdata\repo\AddressRepository.class
+net\javabeat\springdata\repo\EmployeeRepository.class
+net\javabeat\springdata\executable\Executable.class
+net\javabeat\springdata\data\Address.class
+net\javabeat\springdata\webXML\WepXML.class
+net\javabeat\springdata\data\Employee.class

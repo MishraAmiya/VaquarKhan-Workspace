@@ -1,0 +1,41 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building war 0.0.1.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ war ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\target\it\war\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ war ---
+[INFO] Compiling 1 source file to C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\target\it\war\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ war ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\target\it\war\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ war ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ war ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-war-plugin:2.3:war (default-war) @ war ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [war] in [C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\target\it\war\target\war-0.0.1.BUILD-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Copying webapp resources [C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\target\it\war\src\main\webapp]
+[INFO] Webapp assembled in [1311 msecs]
+[INFO] Building war: C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\target\it\war\target\war-0.0.1.BUILD-SNAPSHOT.war
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:1.2.0.BUILD-SNAPSHOT:repackage (default) @ war ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.796s
+[INFO] Finished at: Tue Sep 23 02:09:03 IST 2014
+[INFO] Final Memory: 20M/216M
+[INFO] ------------------------------------------------------------------------
+Running post-build script: C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\target\it\war\verify.groovy
+Finished post-build script: C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\target\it\war\verify.groovy

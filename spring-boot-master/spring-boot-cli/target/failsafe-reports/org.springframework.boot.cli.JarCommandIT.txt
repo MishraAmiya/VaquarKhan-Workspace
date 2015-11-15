@@ -1,0 +1,51 @@
+-------------------------------------------------------------------------------
+Test set: org.springframework.boot.cli.JarCommandIT
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 3.162 sec <<< FAILURE! - in org.springframework.boot.cli.JarCommandIT
+noSources(org.springframework.boot.cli.JarCommandIT)  Time elapsed: 1.155 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: a string containing "The name of the resulting jar and at least one source file must be specified"
+     but: was "Error: Could not find or load main class org.springframework.boot.loader.JarLauncher
+"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:865)
+	at org.junit.Assert.assertThat(Assert.java:832)
+	at org.springframework.boot.cli.JarCommandIT.noSources(JarCommandIT.java:58)
+
+jarCreation(org.springframework.boot.cli.JarCommandIT)  Time elapsed: 0.32 sec  <<< FAILURE!
+java.lang.AssertionError: Error: Could not find or load main class org.springframework.boot.loader.JarLauncher
+ expected:<0> but was:<86>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.springframework.boot.cli.JarCommandIT.jarCreation(JarCommandIT.java:88)
+
+jarCreationWithIncludes(org.springframework.boot.cli.JarCommandIT)  Time elapsed: 0.338 sec  <<< FAILURE!
+java.lang.AssertionError: Error: Could not find or load main class org.springframework.boot.loader.JarLauncher
+ expected:<0> but was:<86>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.springframework.boot.cli.JarCommandIT.jarCreationWithIncludes(JarCommandIT.java:113)
+
+jarCreationWithGrabResolver(org.springframework.boot.cli.JarCommandIT)  Time elapsed: 0.919 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: ""
+     but: was "Error: Could not find or load main class org.springframework.boot.loader.JarLauncher\r\n"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:865)
+	at org.junit.Assert.assertThat(Assert.java:832)
+	at org.springframework.boot.cli.JarCommandIT.jarCreationWithGrabResolver(JarCommandIT.java:68)
+
+noArguments(org.springframework.boot.cli.JarCommandIT)  Time elapsed: 0.423 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: a string containing "The name of the resulting jar and at least one source file must be specified"
+     but: was "Error: Could not find or load main class org.springframework.boot.loader.JarLauncher
+"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:865)
+	at org.junit.Assert.assertThat(Assert.java:832)
+	at org.springframework.boot.cli.JarCommandIT.noArguments(JarCommandIT.java:49)
+

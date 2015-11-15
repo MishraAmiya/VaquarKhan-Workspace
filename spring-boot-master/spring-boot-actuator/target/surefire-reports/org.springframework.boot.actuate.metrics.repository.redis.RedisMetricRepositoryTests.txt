@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.springframework.boot.actuate.metrics.repository.redis.RedisMetricRepositoryTests
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 4.989 sec - in org.springframework.boot.actuate.metrics.repository.redis.RedisMetricRepositoryTests

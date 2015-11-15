@@ -1,0 +1,41 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building executable-war 0.0.1.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ executable-war ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-tools\spring-boot-loader\target\it\executable-war\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ executable-war ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-tools\spring-boot-loader\target\it\executable-war\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ executable-war ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-tools\spring-boot-loader\target\it\executable-war\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ executable-war ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ executable-war ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:unpack (unpack) @ executable-war ---
+[INFO] Configured Artifact: org.springframework.boot:spring-boot-loader:1.2.0.BUILD-SNAPSHOT:jar
+[INFO] Unpacking C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-tools\spring-boot-loader\target\local-repo\org\springframework\boot\spring-boot-loader\1.2.0.BUILD-SNAPSHOT\spring-boot-loader-1.2.0.BUILD-SNAPSHOT.jar to C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-tools\spring-boot-loader\target\it\executable-war\target\executable-war-0.0.1.BUILD-SNAPSHOT with includes "" and excludes ""
+[INFO] 
+[INFO] --- maven-war-plugin:2.3:war (default-war) @ executable-war ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [executable-war] in [C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-tools\spring-boot-loader\target\it\executable-war\target\executable-war-0.0.1.BUILD-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Webapp assembled in [4807 msecs]
+[INFO] Building war: C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\spring-boot-master\spring-boot-tools\spring-boot-loader\target\it\executable-war\target\executable-war-0.0.1.BUILD-SNAPSHOT.war
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 21.427s
+[INFO] Finished at: Tue Sep 23 02:05:08 IST 2014
+[INFO] Final Memory: 23M/238M
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfigurationTests
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.005 sec - in org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfigurationTests

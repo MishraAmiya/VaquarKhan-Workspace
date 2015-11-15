@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_school_domain_Timer" object="${timer}" path="/timers" z="EjsBFGRZod3M5La5TqE9vt+xnDw=">
+        <field:display field="message" id="s_com_school_domain_Timer_message" object="${timer}" z="FuHBOjAfWD5VYDZQLQLIdzOuqgA="/>
+    </page:show>
+</div>

@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<body>
+
+	<ui:composition template="./adminTemplate.xhtml">
+
+		<ui:define name="title">title</ui:define>
+
+
+		<ui:define name="content">
+			<f:view>
+				<h:form enctype="multipart/form-data">
+					<p:panel id="all" style="font-size: 9pt">
+						<p:growl showDetail="true" id="g" />
+
+
+						<p:fieldset legend="Teacher Basic Information">
+
+							<!-- Start Pic  -->
+					
+							<h:panelGrid columns="3" cellpadding="7" style="margin: 0 auto">
+								<p:layoutUnit position="east" resizable="true">
+									<div
+										style="padding-top: 5px; padding-bottom: 5px; border: solid 1px #CCC; -moz-box-shadow: 1px 1px 5px #999; -webkit-box-shadow: 1px 1px 5px #999; box-shadow: 1px 1px 5px #999;">
+										<h:graphicImage value="/DisplayTeacherPhoto?teacher_id=#{displayTeacherInfoBean.teacherId}" width="100" height="120" />
+									</div>
+								</p:layoutUnit>
+							</h:panelGrid>
+							<!-- END -->
+							<h:panelGrid columns="3" cellpadding="7" style="margin: 0 auto">
+
+								<p:outputLabel value="Teacher Name :" />
+								<p:inputText value="#{displayTeacherInfoBean.teacherName}" 	id="teacher" />
+								<p:message for="teacher" />
+
+								<p:outputLabel value="Subject Name :" />
+								<p:selectOneMenu id="sub" value="#{displayTeacherInfoBean.subject}" style="width: 150px">
+									<f:selectItem itemLabel="--Select--" itemValue="" />
+									<f:selectItems value="#{displayTeacherInfoBean.allSubject}" var="sub" itemLabel="#{sub.subject}" 	itemValue="#{sub.subject}" />
+								</p:selectOneMenu>
+								<p:message for="sub" />
+
+								<p:outputLabel value="Mobile Num :" />
+								<p:inputText value="#{displayTeacherInfoBean.teacherMobile}" id="mobile" required="true" requiredMessage="please enter teacher mobile"  validatorMessage="Invalid mobile no">
+								<f:validateRegex pattern="[0-9]*"  />
+								</p:inputText>
+								<p:message for="mobile" />
+
+ 
+								<p:outputLabel value="Present Address :" />
+								<p:inputTextarea value="#{displayTeacherInfoBean.teacherAddress}" id="addr" required="true" requiredMessage="please enter Present Address" />
+								<p:message for="addr" />
+
+								<p:outputLabel value="Joining Date :" />
+								<p:calendar value="#{displayTeacherInfoBean.teacherJoinDate}" id="join" required="true" requiredMessage="please enter Joining Date" />
+								<p:message for="join" />
+
+								<p:outputLabel value="Teacher Grade Name :" />
+								<p:selectOneMenu id="grade" value="#{displayTeacherInfoBean.teacherGrade}" style="width: 150px">
+									<f:selectItem itemLabel="--Select--" itemValue="" />
+									<f:selectItems
+										value="#{displayTeacherInfoBean.allTeacherGrade}" var="gad" itemLabel="#{gad.teacherGrade}" itemValue="#{gad.teacherGrade}" />
+								</p:selectOneMenu>
+								<p:message for="grade" />
+
+								<p:outputLabel value="Email" />
+								<p:inputText id="email" required="true" label="email" 	style="width: 150px" requiredMessage="Please enter your email address." validatorMessage="Invalid email format"
+									value="#{displayTeacherInfoBean.teacherEmail}">
+									<f:validateRegex
+										pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$" />
+								</p:inputText>
+								<p:message for="email" />
+
+								<p:outputLabel value="Resignation  :" />
+								 <h:selectBooleanCheckbox value="#{displayTeacherInfoBean.active}" id="active" binding="#{checkbox}" required="true" requiredMessage="please Check  Ex employee checkbox"  checked="checked"  /> 
+								<p:message for="active" />
+								
+
+								<p:outputLabel value="Departure Date :" />
+								<p:calendar value="#{displayTeacherInfoBean.departDate}" id="dp" required="#{checkbox.value == 'true'}" requiredMessage="please enter Departure Date" />
+								<p:message for="dp" />
+								
+								  <p:outputLabel value="Photo :"/>
+					                  <p:fileUpload value="#{displayTeacherInfoBean.teacherPhoto}" mode="simple"   id="photo" allowTypes="/(\.|\/)(gif|jpe?g|png)$/"  sizeLimit="1000000" required="true" 
+					                  requiredMessage="Please select photo" />
+					                  <p:message for="photo"/>
+                  
+
+								<p:outputLabel value="" />
+								<p:commandButton value="Update"
+									action="#{displayTeacherInfoBean.updateTeacherInfo()}"
+									ajax="false" />
+							</h:panelGrid>
+						</p:fieldset>
+						<br />
+
+						<p:fieldset legend="Others Information">
+							<h:panelGrid columns="3" cellpadding="7" style="margin: 0 auto">
+
+								<p:outputLabel value="User Name :" />
+								<p:inputText id="unn" value="#{displayTeacherInfoBean.userName}"
+									required="true" requiredMessage="please enter User Name"
+									style="color: palevioletred" />
+								<p:message for="unn" />
+
+								<p:outputLabel value="" />
+								<p:commandButton value="Update"
+									action="#{displayTeacherInfoBean.updateUserInfo()}"
+									ajax="false" />
+
+							</h:panelGrid>
+
+						</p:fieldset>
+					</p:panel>
+				</h:form>
+			</f:view>
+		</ui:define>
+
+	</ui:composition>
+
+</body>
+</html>

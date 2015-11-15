@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="9" failures="0" name="com.school.domain.TimerIntegrationTest" time="8.335" errors="9" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_20\jre\bin"/>
+    <property name="java.vm.version" value="25.20-b23"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\SpringRoo-SpringData-Primefaces_1"/>
+    <property name="java.runtime.version" value="1.8.0_20-b26"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_20\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\VAQUAR~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7189008957697188071.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_20\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;c:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Common Files\Roxio Shared\10.0\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;C:\apache-maven-3.1.1\bin;C:\Program Files\Java\jre1.8.0_20\bin;V:\Data\mongodb-win32-x86_64-2008plus-2.4.9\mongodb-win32-x86_64-2008plus-2.4.9\bin;C:\Python34;C:\gradle-2.0\bin;C:\tmp\Pivotal_GemFire_800_b48398_Windows\bin;C:\spring-1.2.0.BUILD-SNAPSHOT\bin;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\Vaquar khan"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="Vaquar khan"/>
+    <property name="java.class.path" value="/C:/Users/Vaquar khan/Downloads/sts-bundle/sts-3.6.1.RELEASE/plugins/org.eclipse.m2e.maven.runtime_1.5.0.20140605-2032/jars/plexus-classworlds-2.5.1.jar"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_20\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_20"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_20\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_20\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_20\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_20\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_20\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_20\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_20\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_20\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_20\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\Vaquar khan\Documents\workspace-sts-3.6.1.RELEASE\SpringRoo-SpringData-Primefaces_1\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.school.domain.TimerIntegrationTest" name="testFlush" time="8.332">
+    <error message="org/springframework/core/annotation/AnnotatedElementUtils" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: org/springframework/core/annotation/AnnotatedElementUtils
+	at org.springframework.transaction.annotation.SpringTransactionAnnotationParser.parseTransactionAnnotation(SpringTransactionAnnotationParser.java:42)
+	at org.springframework.transaction.annotation.AnnotationTransactionAttributeSource.determineTransactionAttribute(AnnotationTransactionAttributeSource.java:154)
+	at org.springframework.transaction.annotation.AnnotationTransactionAttributeSource.findTransactionAttribute(AnnotationTransactionAttributeSource.java:133)
+	at org.springframework.transaction.interceptor.AbstractFallbackTransactionAttributeSource.computeTransactionAttribute(AbstractFallbackTransactionAttributeSource.java:149)
+	at org.springframework.transaction.interceptor.AbstractFallbackTransactionAttributeSource.getTransactionAttribute(AbstractFallbackTransactionAttributeSource.java:100)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:150)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:348)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:134)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+Caused by: java.lang.ClassNotFoundException: org.springframework.core.annotation.AnnotatedElementUtils
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:372)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:360)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 33 more
+</error>
+    <system-out>2015-04-17 02:20:31,190 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_class_time_table_line drop constraint FK_9ve2t5tx4gtekh2mpnp3rsp3c
+2015-04-17 02:20:31,191 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_9ve2t5tx4gtekh2mpnp3rsp3c&apos; at line 1
+2015-04-17 02:20:31,192 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_class_time_table_line drop constraint FK_j0r3oha00nj5agjw6febx0qvp
+2015-04-17 02:20:31,193 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_j0r3oha00nj5agjw6febx0qvp&apos; at line 1
+2015-04-17 02:20:31,193 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_class_time_table_line drop constraint FK_qoaxn1op7d48o8hiaugf9oai
+2015-04-17 02:20:31,194 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_qoaxn1op7d48o8hiaugf9oai&apos; at line 1
+2015-04-17 02:20:31,194 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_class_time_table_line drop constraint FK_e5nsxsc33m2wgovvhxlxn98ng
+2015-04-17 02:20:31,194 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_e5nsxsc33m2wgovvhxlxn98ng&apos; at line 1
+2015-04-17 02:20:31,195 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_reg_fee drop constraint FK_424f1riv1okdqugvpoggask2p
+2015-04-17 02:20:31,195 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_424f1riv1okdqugvpoggask2p&apos; at line 1
+2015-04-17 02:20:31,195 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_section_name drop constraint FK_n2diaj598939oibtqlm7ofglp
+2015-04-17 02:20:31,196 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_n2diaj598939oibtqlm7ofglp&apos; at line 1
+2015-04-17 02:20:31,196 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_section_name drop constraint FK_pe0ffcu07agwsexslnvjvyayi
+2015-04-17 02:20:31,196 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_pe0ffcu07agwsexslnvjvyayi&apos; at line 1
+2015-04-17 02:20:31,196 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_std_attendance drop constraint FK_pw7gcnjg2b6e090apvum3tysp
+2015-04-17 02:20:31,197 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_pw7gcnjg2b6e090apvum3tysp&apos; at line 1
+2015-04-17 02:20:31,199 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_std_attendance drop constraint FK_fm9wx9k4jcodbqxtj8nris3b2
+2015-04-17 02:20:31,199 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_fm9wx9k4jcodbqxtj8nris3b2&apos; at line 1
+2015-04-17 02:20:31,199 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_std_attendance drop constraint FK_anh7m4i2k4wd98920o73jb7sm
+2015-04-17 02:20:31,199 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_anh7m4i2k4wd98920o73jb7sm&apos; at line 1
+2015-04-17 02:20:31,200 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_std_attendance drop constraint FK_4h35xgvoj0q6sktfi4v5pcdgw
+2015-04-17 02:20:31,200 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_4h35xgvoj0q6sktfi4v5pcdgw&apos; at line 1
+2015-04-17 02:20:31,200 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_std_contact_info drop constraint FK_7gwvik8jm4enfhegdx1a601iw
+2015-04-17 02:20:31,201 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_7gwvik8jm4enfhegdx1a601iw&apos; at line 1
+2015-04-17 02:20:31,201 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_std_marks drop constraint FK_7wias0v0neyrjvxllv4qv77bm
+2015-04-17 02:20:31,201 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_7wias0v0neyrjvxllv4qv77bm&apos; at line 1
+2015-04-17 02:20:31,202 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_std_marks drop constraint FK_m43vpw0ddkp9qps6yrg3rih4j
+2015-04-17 02:20:31,202 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_m43vpw0ddkp9qps6yrg3rih4j&apos; at line 1
+2015-04-17 02:20:31,202 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_std_marks drop constraint FK_2x2plypv2hewshvflklda3531
+2015-04-17 02:20:31,203 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_2x2plypv2hewshvflklda3531&apos; at line 1
+2015-04-17 02:20:31,203 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_std_marks drop constraint FK_emg14ej41ur6hrns00cviiir9
+2015-04-17 02:20:31,204 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_emg14ej41ur6hrns00cviiir9&apos; at line 1
+2015-04-17 02:20:31,204 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_std_marks drop constraint FK_12j84o6t71fgu6dhpx2uixbsd
+2015-04-17 02:20:31,204 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_12j84o6t71fgu6dhpx2uixbsd&apos; at line 1
+2015-04-17 02:20:31,205 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_std_registration drop constraint FK_c059o0mqjrdxjsg4s8m2tpyce
+2015-04-17 02:20:31,205 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_c059o0mqjrdxjsg4s8m2tpyce&apos; at line 1
+2015-04-17 02:20:31,205 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_std_registration drop constraint FK_2hvt36j7e93hua8whafb1d9l4
+2015-04-17 02:20:31,205 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_2hvt36j7e93hua8whafb1d9l4&apos; at line 1
+2015-04-17 02:20:31,206 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_std_registration drop constraint FK_5r7yevjh9ll3u5kdedciiku6g
+2015-04-17 02:20:31,206 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_5r7yevjh9ll3u5kdedciiku6g&apos; at line 1
+2015-04-17 02:20:31,206 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_std_registration drop constraint FK_cpbgbfq98bgmcqtt3lqofy98c
+2015-04-17 02:20:31,207 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_cpbgbfq98bgmcqtt3lqofy98c&apos; at line 1
+2015-04-17 02:20:31,207 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_student_info drop constraint FK_7c0jxg2ok7qyem1uoakd5r3dv
+2015-04-17 02:20:31,207 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_7c0jxg2ok7qyem1uoakd5r3dv&apos; at line 1
+2015-04-17 02:20:31,208 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_teacher_info drop constraint FK_hner1w390shoynxiycepltacl
+2015-04-17 02:20:31,208 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_hner1w390shoynxiycepltacl&apos; at line 1
+2015-04-17 02:20:31,209 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_teacher_info drop constraint FK_jxlk7htulp9xtiberohrgvs9j
+2015-04-17 02:20:31,209 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_jxlk7htulp9xtiberohrgvs9j&apos; at line 1
+2015-04-17 02:20:31,209 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_teacher_info drop constraint FK_r6fthe8h3v06g7t9h5ief0ieq
+2015-04-17 02:20:31,210 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_r6fthe8h3v06g7t9h5ief0ieq&apos; at line 1
+2015-04-17 02:20:31,210 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_teacher_sub_assign drop constraint FK_5np2e2yrnwsd30713o2x3l82k
+2015-04-17 02:20:31,210 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_5np2e2yrnwsd30713o2x3l82k&apos; at line 1
+2015-04-17 02:20:31,211 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_teacher_sub_assign drop constraint FK_ea569f30lv636nsd7quyfassb
+2015-04-17 02:20:31,211 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_ea569f30lv636nsd7quyfassb&apos; at line 1
+2015-04-17 02:20:31,211 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_teacher_sub_assign drop constraint FK_1bmjklfndgqblted5qyobp15m
+2015-04-17 02:20:31,211 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_1bmjklfndgqblted5qyobp15m&apos; at line 1
+2015-04-17 02:20:31,212 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_time_table drop constraint FK_n9301nu56j3du5g4xghamq2fx
+2015-04-17 02:20:31,212 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_n9301nu56j3du5g4xghamq2fx&apos; at line 1
+2015-04-17 02:20:31,212 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_time_table drop constraint FK_p0a70uu3x4prao1j8f96rdkdr
+2015-04-17 02:20:31,212 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_p0a70uu3x4prao1j8f96rdkdr&apos; at line 1
+2015-04-17 02:20:31,213 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_time_table drop constraint FK_kpd8m7y1opi3qumawgtl32hgv
+2015-04-17 02:20:31,215 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_kpd8m7y1opi3qumawgtl32hgv&apos; at line 1
+2015-04-17 02:20:31,216 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_user drop constraint FK_3yls6uvc7dmc9um5fbadx359r
+2015-04-17 02:20:31,217 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;constraint FK_3yls6uvc7dmc9um5fbadx359r&apos; at line 1
+2015-04-17 02:20:31,240 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table sch_academic_year if exists
+2015-04-17 02:20:31,241 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;if exists&apos; at line 1
+2015-04-17 02:20:31,241 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table sch_class_name if exists
+2015-04-17 02:20:31,242 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;if exists&apos; at line 1
+2015-04-17 02:20:31,245 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table sch_class_time_table_line if exists
+2015-04-17 02:20:31,245 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;if exists&apos; at line 1
+2015-04-17 02:20:31,246 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table sch_day_period if exists
+2015-04-17 02:20:31,247 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;if exists&apos; at line 1
+2015-04-17 02:20:31,251 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table sch_exam_title if exists
+2015-04-17 02:20:31,251 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;if exists&apos; at line 1
+2015-04-17 02:20:31,251 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table sch_reg_fee if exists
+2015-04-17 02:20:31,252 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;if exists&apos; at line 1
+2015-04-17 02:20:31,252 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table sch_school_notice if exists
+2015-04-17 02:20:31,252 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;if exists&apos; at line 1
+2015-04-17 02:20:31,253 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table sch_section_name if exists
+2015-04-17 02:20:31,253 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;if exists&apos; at line 1
+2015-04-17 02:20:31,253 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table sch_std_attendance if exists
+2015-04-17 02:20:31,253 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;if exists&apos; at line 1
+2015-04-17 02:20:31,254 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table sch_std_contact_info if exists
+2015-04-17 02:20:31,254 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;if exists&apos; at line 1
+2015-04-17 02:20:31,254 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table sch_std_group if exists
+2015-04-17 02:20:31,254 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;if exists&apos; at line 1
+2015-04-17 02:20:31,255 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table sch_std_marks if exists
+2015-04-17 02:20:31,255 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;if exists&apos; at line 1
+2015-04-17 02:20:31,255 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table sch_std_registration if exists
+2015-04-17 02:20:31,255 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;if exists&apos; at line 1
+2015-04-17 02:20:31,256 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table sch_student_info if exists
+2015-04-17 02:20:31,256 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;if exists&apos; at line 1
+2015-04-17 02:20:31,257 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table sch_subject if exists
+2015-04-17 02:20:31,257 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;if exists&apos; at line 1
+2015-04-17 02:20:31,257 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table sch_teacher_grade if exists
+2015-04-17 02:20:31,257 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;if exists&apos; at line 1
+2015-04-17 02:20:31,257 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table sch_teacher_info if exists
+2015-04-17 02:20:31,258 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;if exists&apos; at line 1
+2015-04-17 02:20:31,258 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table sch_teacher_sub_assign if exists
+2015-04-17 02:20:31,258 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;if exists&apos; at line 1
+2015-04-17 02:20:31,259 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table sch_time_table if exists
+2015-04-17 02:20:31,259 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;if exists&apos; at line 1
+2015-04-17 02:20:31,259 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table sch_user if exists
+2015-04-17 02:20:31,259 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;if exists&apos; at line 1
+2015-04-17 02:20:31,260 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table sch_user_role if exists
+2015-04-17 02:20:31,260 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;if exists&apos; at line 1
+2015-04-17 02:20:31,261 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: drop table timer if exists
+2015-04-17 02:20:31,261 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;if exists&apos; at line 1
+2015-04-17 02:20:31,297 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table sch_academic_year (acyid integer generated by default as identity (start with 1), acyear varchar(255), isclosed tinyint not null, no_of_exam integer, primary key (acyid))
+2015-04-17 02:20:31,297 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;generated by default as identity (start with 1), acyear varchar(255), isclosed t&apos; at line 1
+2015-04-17 02:20:31,297 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table sch_class_name (class_id integer generated by default as identity (start with 1), class_name varchar(255), primary key (class_id))
+2015-04-17 02:20:31,297 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;generated by default as identity (start with 1), class_name varchar(255), primar&apos; at line 1
+2015-04-17 02:20:31,298 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table sch_class_time_table_line (tt_line_id integer generated by default as identity (start with 1), ttday varchar(255), dpid integer, subject_id integer, teacher_id integer, ttid integer, primary key (tt_line_id))
+2015-04-17 02:20:31,298 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;generated by default as identity (start with 1), ttday varchar(255), dpid intege&apos; at line 1
+2015-04-17 02:20:31,299 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table sch_day_period (dpid integer generated by default as identity (start with 1), dptime varchar(255), primary key (dpid))
+2015-04-17 02:20:31,299 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;generated by default as identity (start with 1), dptime varchar(255), primary ke&apos; at line 1
+2015-04-17 02:20:31,299 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table sch_exam_title (ex_tt_id integer generated by default as identity (start with 1), description varchar(255), exam_title varchar(255), primary key (ex_tt_id))
+2015-04-17 02:20:31,299 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;generated by default as identity (start with 1), description varchar(255), exam_&apos; at line 1
+2015-04-17 02:20:31,300 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table sch_reg_fee (fee_id integer generated by default as identity (start with 1), fee_amount double, pay_date date, reg_id integer, primary key (fee_id))
+2015-04-17 02:20:31,300 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;generated by default as identity (start with 1), fee_amount double, pay_date dat&apos; at line 1
+2015-04-17 02:20:31,300 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table sch_school_notice (notice_id integer generated by default as identity (start with 1), expire_date timestamp, notice varchar(255), notice_img longvarbinary, notice_title varchar(255), publish_date timestamp, primary key (notice_id))
+2015-04-17 02:20:31,300 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;generated by default as identity (start with 1), expire_date timestamp, notice v&apos; at line 1
+2015-04-17 02:20:31,301 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table sch_section_name (section_id integer generated by default as identity (start with 1), section_name varchar(255), acyid integer, class_id integer, primary key (section_id))
+2015-04-17 02:20:31,301 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;generated by default as identity (start with 1), section_name varchar(255), acyi&apos; at line 1
+2015-04-17 02:20:31,309 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table sch_std_attendance (attend_id integer generated by default as identity (start with 1), attend_date date, attend_status tinyint, reason varchar(255), std_roll_no integer, acyid integer, section_id integer, group_id integer, std_id integer, primary key (attend_id))
+2015-04-17 02:20:31,309 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;generated by default as identity (start with 1), attend_date date, attend_status&apos; at line 1
+2015-04-17 02:20:31,310 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table sch_std_contact_info (contact_id integer generated by default as identity (start with 1), mobile_no varchar(255), parmanent_addr varchar(255), present_addr varchar(255), tel_no varchar(255), std_id integer, primary key (contact_id))
+2015-04-17 02:20:31,310 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;generated by default as identity (start with 1), mobile_no varchar(255), parmane&apos; at line 1
+2015-04-17 02:20:31,311 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table sch_std_group (group_id integer generated by default as identity (start with 1), group_name varchar(255), group_status tinyint, primary key (group_id))
+2015-04-17 02:20:31,311 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;generated by default as identity (start with 1), group_name varchar(255), group_&apos; at line 1
+2015-04-17 02:20:31,311 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table sch_std_marks (marks_id integer generated by default as identity (start with 1), marks_obtain integer, std_roll_no integer, sub_grade varchar(255), acyid integer, ex_tt_id integer, section_id integer, group_id integer, subject_id integer, primary key (marks_id))
+2015-04-17 02:20:31,312 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;generated by default as identity (start with 1), marks_obtain integer, std_roll_&apos; at line 1
+2015-04-17 02:20:31,312 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table sch_std_registration (reg_id integer generated by default as identity (start with 1), reg_date date, std_roll_no integer, acyid integer, section_id integer, group_id integer, std_id integer, primary key (reg_id))
+2015-04-17 02:20:31,312 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;generated by default as identity (start with 1), reg_date date, std_roll_no inte&apos; at line 1
+2015-04-17 02:20:31,313 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table sch_student_info (std_id integer generated by default as identity (start with 1), std_age integer, std_dob date, std_father_name varchar(255), std_gender varchar(255), std_mother_name varchar(255), std_name varchar(255), std_photo longvarbinary, std_status tinyint, user_id integer, primary key (std_id))
+2015-04-17 02:20:31,313 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;generated by default as identity (start with 1), std_age integer, std_dob date, &apos; at line 1
+2015-04-17 02:20:31,314 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table sch_subject (subject_id integer generated by default as identity (start with 1), subject_code integer, subject_name varchar(255), primary key (subject_id))
+2015-04-17 02:20:31,314 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;generated by default as identity (start with 1), subject_code integer, subject_n&apos; at line 1
+2015-04-17 02:20:31,314 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table sch_teacher_grade (teacher_grade_id integer generated by default as identity (start with 1), teacher_grade varchar(255), primary key (teacher_grade_id))
+2015-04-17 02:20:31,314 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;generated by default as identity (start with 1), teacher_grade varchar(255), pri&apos; at line 1
+2015-04-17 02:20:31,315 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table sch_teacher_info (teacher_id integer generated by default as identity (start with 1), depart_date varchar(255), ispresent tinyint not null, teacher_addr varchar(255), teacher_email varchar(255), teacher_join_date date, teacher_mobile varchar(255), teacher_name varchar(255), teacher_photo longvarbinary, subject_id integer, teacher_grade_id integer, user_id integer, primary key (teacher_id))
+2015-04-17 02:20:31,315 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;generated by default as identity (start with 1), depart_date varchar(255), ispre&apos; at line 1
+2015-04-17 02:20:31,315 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table sch_teacher_sub_assign (teach_sub_assign_id integer generated by default as identity (start with 1), section_id integer, subject_id integer, teacher_id integer, primary key (teach_sub_assign_id))
+2015-04-17 02:20:31,315 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;generated by default as identity (start with 1), section_id integer, subject_id &apos; at line 1
+2015-04-17 02:20:31,316 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table sch_time_table (ttid integer generated by default as identity (start with 1), class_id integer, section_id integer, group_id integer, primary key (ttid))
+2015-04-17 02:20:31,316 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;generated by default as identity (start with 1), class_id integer, section_id in&apos; at line 1
+2015-04-17 02:20:31,317 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table sch_user (user_id integer generated by default as identity (start with 1), isactive tinyint not null, password varchar(255), uname varchar(255), role_id integer, primary key (user_id))
+2015-04-17 02:20:31,317 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;generated by default as identity (start with 1), isactive tinyint not null, pass&apos; at line 1
+2015-04-17 02:20:31,318 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table sch_user_role (role_id integer generated by default as identity (start with 1), role_name varchar(255), primary key (role_id))
+2015-04-17 02:20:31,318 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;generated by default as identity (start with 1), role_name varchar(255), primary&apos; at line 1
+2015-04-17 02:20:31,318 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: create table timer (id bigint generated by default as identity (start with 1), message varchar(255) not null, version integer, primary key (id))
+2015-04-17 02:20:31,318 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;generated by default as identity (start with 1), message varchar(255) not null, &apos; at line 1
+2015-04-17 02:20:31,487 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_class_time_table_line add constraint FK_9ve2t5tx4gtekh2mpnp3rsp3c foreign key (dpid) references sch_day_period
+2015-04-17 02:20:31,487 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:31,539 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_class_time_table_line add constraint FK_j0r3oha00nj5agjw6febx0qvp foreign key (subject_id) references sch_subject
+2015-04-17 02:20:31,539 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:31,560 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_class_time_table_line add constraint FK_qoaxn1op7d48o8hiaugf9oai foreign key (teacher_id) references sch_teacher_info
+2015-04-17 02:20:31,560 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:31,638 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_class_time_table_line add constraint FK_e5nsxsc33m2wgovvhxlxn98ng foreign key (ttid) references sch_time_table
+2015-04-17 02:20:31,638 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:31,678 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_reg_fee add constraint FK_424f1riv1okdqugvpoggask2p foreign key (reg_id) references sch_std_registration
+2015-04-17 02:20:31,678 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:31,693 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_section_name add constraint FK_n2diaj598939oibtqlm7ofglp foreign key (acyid) references sch_academic_year
+2015-04-17 02:20:31,693 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:31,731 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_section_name add constraint FK_pe0ffcu07agwsexslnvjvyayi foreign key (class_id) references sch_class_name
+2015-04-17 02:20:31,731 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:31,801 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_std_attendance add constraint FK_pw7gcnjg2b6e090apvum3tysp foreign key (acyid) references sch_academic_year
+2015-04-17 02:20:31,801 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:31,857 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_std_attendance add constraint FK_fm9wx9k4jcodbqxtj8nris3b2 foreign key (section_id) references sch_section_name
+2015-04-17 02:20:31,857 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:31,876 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_std_attendance add constraint FK_anh7m4i2k4wd98920o73jb7sm foreign key (group_id) references sch_std_group
+2015-04-17 02:20:31,877 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:31,897 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_std_attendance add constraint FK_4h35xgvoj0q6sktfi4v5pcdgw foreign key (std_id) references sch_student_info
+2015-04-17 02:20:31,897 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:31,905 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_std_contact_info add constraint FK_7gwvik8jm4enfhegdx1a601iw foreign key (std_id) references sch_student_info
+2015-04-17 02:20:31,906 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:31,936 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_std_marks add constraint FK_7wias0v0neyrjvxllv4qv77bm foreign key (acyid) references sch_academic_year
+2015-04-17 02:20:31,936 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:31,987 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_std_marks add constraint FK_m43vpw0ddkp9qps6yrg3rih4j foreign key (ex_tt_id) references sch_exam_title
+2015-04-17 02:20:31,987 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:32,027 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_std_marks add constraint FK_2x2plypv2hewshvflklda3531 foreign key (section_id) references sch_section_name
+2015-04-17 02:20:32,028 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:32,097 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_std_marks add constraint FK_emg14ej41ur6hrns00cviiir9 foreign key (group_id) references sch_std_group
+2015-04-17 02:20:32,097 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:32,123 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_std_marks add constraint FK_12j84o6t71fgu6dhpx2uixbsd foreign key (subject_id) references sch_subject
+2015-04-17 02:20:32,123 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:32,193 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_std_registration add constraint FK_c059o0mqjrdxjsg4s8m2tpyce foreign key (acyid) references sch_academic_year
+2015-04-17 02:20:32,194 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:32,213 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_std_registration add constraint FK_2hvt36j7e93hua8whafb1d9l4 foreign key (section_id) references sch_section_name
+2015-04-17 02:20:32,213 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:32,233 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_std_registration add constraint FK_5r7yevjh9ll3u5kdedciiku6g foreign key (group_id) references sch_std_group
+2015-04-17 02:20:32,233 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:32,252 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_std_registration add constraint FK_cpbgbfq98bgmcqtt3lqofy98c foreign key (std_id) references sch_student_info
+2015-04-17 02:20:32,252 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:32,261 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_student_info add constraint FK_7c0jxg2ok7qyem1uoakd5r3dv foreign key (user_id) references sch_user
+2015-04-17 02:20:32,261 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:32,273 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_teacher_info add constraint FK_hner1w390shoynxiycepltacl foreign key (subject_id) references sch_subject
+2015-04-17 02:20:32,273 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:32,282 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_teacher_info add constraint FK_jxlk7htulp9xtiberohrgvs9j foreign key (teacher_grade_id) references sch_teacher_grade
+2015-04-17 02:20:32,283 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:32,293 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_teacher_info add constraint FK_r6fthe8h3v06g7t9h5ief0ieq foreign key (user_id) references sch_user
+2015-04-17 02:20:32,293 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:32,302 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_teacher_sub_assign add constraint FK_5np2e2yrnwsd30713o2x3l82k foreign key (section_id) references sch_section_name
+2015-04-17 02:20:32,302 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:32,399 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_teacher_sub_assign add constraint FK_ea569f30lv636nsd7quyfassb foreign key (subject_id) references sch_subject
+2015-04-17 02:20:32,400 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:32,410 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_teacher_sub_assign add constraint FK_1bmjklfndgqblted5qyobp15m foreign key (teacher_id) references sch_teacher_info
+2015-04-17 02:20:32,411 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:32,423 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_time_table add constraint FK_n9301nu56j3du5g4xghamq2fx foreign key (class_id) references sch_class_name
+2015-04-17 02:20:32,424 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:32,796 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_time_table add constraint FK_p0a70uu3x4prao1j8f96rdkdr foreign key (section_id) references sch_section_name
+2015-04-17 02:20:32,796 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:32,841 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_time_table add constraint FK_kpd8m7y1opi3qumawgtl32hgv foreign key (group_id) references sch_std_group
+2015-04-17 02:20:32,841 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+2015-04-17 02:20:32,918 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table sch_user add constraint FK_3yls6uvc7dmc9um5fbadx359r foreign key (role_id) references sch_user_role
+2015-04-17 02:20:32,918 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Can&apos;t create table &apos;school.#sql-4f8_2f&apos; (errno: 150)
+</system-out>
+  </testcase>
+  <testcase classname="com.school.domain.TimerIntegrationTest" name="testPersist" time="0">
+    <error message="org/springframework/core/annotation/AnnotatedElementUtils" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: org/springframework/core/annotation/AnnotatedElementUtils
+	at org.springframework.transaction.annotation.SpringTransactionAnnotationParser.parseTransactionAnnotation(SpringTransactionAnnotationParser.java:42)
+	at org.springframework.transaction.annotation.AnnotationTransactionAttributeSource.determineTransactionAttribute(AnnotationTransactionAttributeSource.java:154)
+	at org.springframework.transaction.annotation.AnnotationTransactionAttributeSource.findTransactionAttribute(AnnotationTransactionAttributeSource.java:133)
+	at org.springframework.transaction.interceptor.AbstractFallbackTransactionAttributeSource.computeTransactionAttribute(AbstractFallbackTransactionAttributeSource.java:149)
+	at org.springframework.transaction.interceptor.AbstractFallbackTransactionAttributeSource.getTransactionAttribute(AbstractFallbackTransactionAttributeSource.java:100)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:150)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:348)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:134)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+</error>
+  </testcase>
+  <testcase classname="com.school.domain.TimerIntegrationTest" name="testMarkerMethod" time="0.001">
+    <error message="org/springframework/core/annotation/AnnotatedElementUtils" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: org/springframework/core/annotation/AnnotatedElementUtils
+	at org.springframework.transaction.annotation.SpringTransactionAnnotationParser.parseTransactionAnnotation(SpringTransactionAnnotationParser.java:42)
+	at org.springframework.transaction.annotation.AnnotationTransactionAttributeSource.determineTransactionAttribute(AnnotationTransactionAttributeSource.java:154)
+	at org.springframework.transaction.annotation.AnnotationTransactionAttributeSource.findTransactionAttribute(AnnotationTransactionAttributeSource.java:133)
+	at org.springframework.transaction.interceptor.AbstractFallbackTransactionAttributeSource.computeTransactionAttribute(AbstractFallbackTransactionAttributeSource.java:149)
+	at org.springframework.transaction.interceptor.AbstractFallbackTransactionAttributeSource.getTransactionAttribute(AbstractFallbackTransactionAttributeSource.java:100)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:150)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:348)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:134)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+</error>
+  </testcase>
+  <testcase classname="com.school.domain.TimerIntegrationTest" name="testMergeUpdate" time="0">
+    <error message="org/springframework/core/annotation/AnnotatedElementUtils" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: org/springframework/core/annotation/AnnotatedElementUtils
+	at org.springframework.transaction.annotation.SpringTransactionAnnotationParser.parseTransactionAnnotation(SpringTransactionAnnotationParser.java:42)
+	at org.springframework.transaction.annotation.AnnotationTransactionAttributeSource.determineTransactionAttribute(AnnotationTransactionAttributeSource.java:154)
+	at org.springframework.transaction.annotation.AnnotationTransactionAttributeSource.findTransactionAttribute(AnnotationTransactionAttributeSource.java:133)
+	at org.springframework.transaction.interceptor.AbstractFallbackTransactionAttributeSource.computeTransactionAttribute(AbstractFallbackTransactionAttributeSource.java:149)
+	at org.springframework.transaction.interceptor.AbstractFallbackTransactionAttributeSource.getTransactionAttribute(AbstractFallbackTransactionAttributeSource.java:100)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:150)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:348)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:134)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+</error>
+  </testcase>
+  <testcase classname="com.school.domain.TimerIntegrationTest" name="testFindTimerEntries" time="0.001">
+    <error message="org/springframework/core/annotation/AnnotatedElementUtils" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: org/springframework/core/annotation/AnnotatedElementUtils
+	at org.springframework.transaction.annotation.SpringTransactionAnnotationParser.parseTransactionAnnotation(SpringTransactionAnnotationParser.java:42)
+	at org.springframework.transaction.annotation.AnnotationTransactionAttributeSource.determineTransactionAttribute(AnnotationTransactionAttributeSource.java:154)
+	at org.springframework.transaction.annotation.AnnotationTransactionAttributeSource.findTransactionAttribute(AnnotationTransactionAttributeSource.java:133)
+	at org.springframework.transaction.interceptor.AbstractFallbackTransactionAttributeSource.computeTransactionAttribute(AbstractFallbackTransactionAttributeSource.java:149)
+	at org.springframework.transaction.interceptor.AbstractFallbackTransactionAttributeSource.getTransactionAttribute(AbstractFallbackTransactionAttributeSource.java:100)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:150)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:348)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:134)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+</error>
+  </testcase>
+  <testcase classname="com.school.domain.TimerIntegrationTest" name="testFindTimer" time="0">
+    <error message="org/springframework/core/annotation/AnnotatedElementUtils" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: org/springframework/core/annotation/AnnotatedElementUtils
+	at org.springframework.transaction.annotation.SpringTransactionAnnotationParser.parseTransactionAnnotation(SpringTransactionAnnotationParser.java:42)
+	at org.springframework.transaction.annotation.AnnotationTransactionAttributeSource.determineTransactionAttribute(AnnotationTransactionAttributeSource.java:154)
+	at org.springframework.transaction.annotation.AnnotationTransactionAttributeSource.findTransactionAttribute(AnnotationTransactionAttributeSource.java:133)
+	at org.springframework.transaction.interceptor.AbstractFallbackTransactionAttributeSource.computeTransactionAttribute(AbstractFallbackTransactionAttributeSource.java:149)
+	at org.springframework.transaction.interceptor.AbstractFallbackTransactionAttributeSource.getTransactionAttribute(AbstractFallbackTransactionAttributeSource.java:100)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:150)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:348)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:134)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+</error>
+  </testcase>
+  <testcase classname="com.school.domain.TimerIntegrationTest" name="testCountTimers" time="0">
+    <error message="org/springframework/core/annotation/AnnotatedElementUtils" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: org/springframework/core/annotation/AnnotatedElementUtils
+	at org.springframework.transaction.annotation.SpringTransactionAnnotationParser.parseTransactionAnnotation(SpringTransactionAnnotationParser.java:42)
+	at org.springframework.transaction.annotation.AnnotationTransactionAttributeSource.determineTransactionAttribute(AnnotationTransactionAttributeSource.java:154)
+	at org.springframework.transaction.annotation.AnnotationTransactionAttributeSource.findTransactionAttribute(AnnotationTransactionAttributeSource.java:133)
+	at org.springframework.transaction.interceptor.AbstractFallbackTransactionAttributeSource.computeTransactionAttribute(AbstractFallbackTransactionAttributeSource.java:149)
+	at org.springframework.transaction.interceptor.AbstractFallbackTransactionAttributeSource.getTransactionAttribute(AbstractFallbackTransactionAttributeSource.java:100)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:150)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:348)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:134)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+</error>
+  </testcase>
+  <testcase classname="com.school.domain.TimerIntegrationTest" name="testRemove" time="0">
+    <error message="org/springframework/core/annotation/AnnotatedElementUtils" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: org/springframework/core/annotation/AnnotatedElementUtils
+	at org.springframework.transaction.annotation.SpringTransactionAnnotationParser.parseTransactionAnnotation(SpringTransactionAnnotationParser.java:42)
+	at org.springframework.transaction.annotation.AnnotationTransactionAttributeSource.determineTransactionAttribute(AnnotationTransactionAttributeSource.java:154)
+	at org.springframework.transaction.annotation.AnnotationTransactionAttributeSource.findTransactionAttribute(AnnotationTransactionAttributeSource.java:133)
+	at org.springframework.transaction.interceptor.AbstractFallbackTransactionAttributeSource.computeTransactionAttribute(AbstractFallbackTransactionAttributeSource.java:149)
+	at org.springframework.transaction.interceptor.AbstractFallbackTransactionAttributeSource.getTransactionAttribute(AbstractFallbackTransactionAttributeSource.java:100)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:150)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:348)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:134)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+</error>
+  </testcase>
+  <testcase classname="com.school.domain.TimerIntegrationTest" name="testFindAllTimers" time="0.001">
+    <error message="org/springframework/core/annotation/AnnotatedElementUtils" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: org/springframework/core/annotation/AnnotatedElementUtils
+	at org.springframework.transaction.annotation.SpringTransactionAnnotationParser.parseTransactionAnnotation(SpringTransactionAnnotationParser.java:42)
+	at org.springframework.transaction.annotation.AnnotationTransactionAttributeSource.determineTransactionAttribute(AnnotationTransactionAttributeSource.java:154)
+	at org.springframework.transaction.annotation.AnnotationTransactionAttributeSource.findTransactionAttribute(AnnotationTransactionAttributeSource.java:133)
+	at org.springframework.transaction.interceptor.AbstractFallbackTransactionAttributeSource.computeTransactionAttribute(AbstractFallbackTransactionAttributeSource.java:149)
+	at org.springframework.transaction.interceptor.AbstractFallbackTransactionAttributeSource.getTransactionAttribute(AbstractFallbackTransactionAttributeSource.java:100)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:150)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:348)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:134)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+</error>
+  </testcase>
+</testsuite>

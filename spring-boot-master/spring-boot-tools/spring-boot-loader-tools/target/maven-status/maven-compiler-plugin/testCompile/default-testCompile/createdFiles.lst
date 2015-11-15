@@ -1,0 +1,15 @@
+org\springframework\boot\loader\tools\MainClassFinderTests$1.class
+org\springframework\boot\loader\tools\RepackagerTests$2.class
+org\springframework\boot\loader\tools\FileUtilsTests.class
+org\springframework\boot\loader\tools\LayoutsTests.class
+org\springframework\boot\loader\tools\RepackagerTests$3.class
+org\springframework\boot\loader\tools\MainClassFinderTests.class
+org\springframework\boot\loader\tools\MainClassFinderTests$ClassNameCollector.class
+org\springframework\boot\loader\tools\RepackagerTests$5.class
+org\springframework\boot\loader\tools\RepackagerTests.class
+org\springframework\boot\loader\tools\TestJarFile.class
+org\springframework\boot\loader\tools\JvmUtilsTests.class
+org\springframework\boot\loader\tools\sample\ClassWithMainMethod.class
+org\springframework\boot\loader\tools\RepackagerTests$1.class
+org\springframework\boot\loader\tools\RepackagerTests$4.class
+org\springframework\boot\loader\tools\sample\ClassWithoutMainMethod.class

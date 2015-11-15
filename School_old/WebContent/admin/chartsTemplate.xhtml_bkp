@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link href="./../resources/css/default.css" rel="stylesheet"
+		type="text/css" />
+	<link href="./../resources/css/cssLayout.css" rel="stylesheet"
+		type="text/css" />
+	<title>Facelets Template</title>
+	<style>
+.imagedropshadow {
+	padding: 5px;
+	border: solid 1px #EFEFEF;
+}
+
+a:hover div.imagedropshadow {
+	border: solid 1px #CCC;
+	-moz-box-shadow: 1px 1px 5px #999;
+	-webkit-box-shadow: 1px 1px 5px #999;
+	box-shadow: 1px 1px 5px #999;
+}
+</style>
+</h:head>
+
+<h:body>
+
+	<!-- <ui:composition template="./../admin/adminTemplate.xhtml"> -->
+	<ui:composition template="./adminTemplate.xhtml">
+
+		<ui:define name="title">School Management - Admin Home </ui:define>
+
+		<ui:define name="content">
+			
+			<h:panelGrid columns="3" cellpadding="20">
+				<!--  -->
+
+				<p:layout style="min-width:790px;min-height:790px;" >
+					<p:layoutUnit position="north" resizable="true" >
+					<h1 style="text-align: center; border: none;">Welcome to Chart Pane</h1>
+					<h:form>
+ 						<b>Select Chart Type :</b>
+							<h:selectOneMenu value="#{userData.data}">
+								<f:selectItem itemValue="1" itemLabel="Pie-Chart" />
+								<f:selectItem itemValue="2" itemLabel="Bar-Chart" />
+							</h:selectOneMenu>
+							<h:commandButton value="Submit" action="result" />
+				        </h:form>
+				 	</p:layoutUnit>
+         			<p:layoutUnit position="east" size="200" header="Left" resizable="true" closable="true" collapsible="true">
+							<div style=" color: navy; background-color: green; border: 2px solid blue; padding: 5px;">
+							  <p>Year : 2015</p>
+							</div>         			
+					
+							<div style=" color: navy; background-color: Coral; border: 2px solid blue; padding: 5px;">
+							  <p>Branch : Pune </p>
+							</div>
+							
+							<div style=" color: navy; background-color: AntiqueWhite; border: 2px solid blue; padding: 5px;">
+							  <p>Total Teachers : 20</p>
+							</div>
+							
+							<div style=" color: navy; background-color: pink; border: 2px solid blue; padding: 5px;">
+							  <p>Total students: 2000</p>
+							</div>
+							
+					</p:layoutUnit>
+         					
+         
+		<!--  -->
+					<p:layoutUnit position="center" size="200" header="Left" resizable="true" closable="true" collapsible="true">
+						<c:choose>
+							<c:when test="#{userData.data eq '1'}">
+								
+									<p:chart type="pie" model="#{chartView.pieModel1}" 	style="width:400px;height:300px" />
+									<p:chart type="pie" model="#{chartView.pieModel1}" 	style="width:400px;height:300px" />
+							</c:when>
+							<c:otherwise>
+									
+										<p:chart type="bar" model="#{chartView.barModel}" style="width:400px;height:200px" />
+										<p:chart type="bar" model="#{chartView.horizontalBarModel}" style="width:400px;height:200px " />
+										
+ 							</c:otherwise>
+						</c:choose>
+				</p:layoutUnit>
+				</p:layout>
+			</h:panelGrid>
+		</ui:define>
+		<!--  -->
+	</ui:composition>
+
+</h:body>
+
+</html>
